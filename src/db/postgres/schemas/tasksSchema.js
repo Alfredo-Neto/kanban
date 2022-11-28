@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
-const columnsSchema = {
-  name: "columns",
+const tasksSchema = {
+  name: "tasks",
   schema: {
     id: {
       type: Sequelize.INTEGER,
@@ -13,18 +13,18 @@ const columnsSchema = {
       type: Sequelize.STRING,
       required: true,
     },
-    // panelId: {
+    // columnId: {
     //   type: Sequelize.INTEGER,
-    //   references: "panels",
+    //   references: "columns",
     //   referencesKey: "id",
     // },
   },
   options: {
     //opcoes para base existente
-    tableName: "COLUMNS",
+    tableName: "TASKS",
     freezeTableName: false,
     timestamps: false,
   },
 };
 
-module.exports = columnsSchema;
+module.exports = tasksSchema;

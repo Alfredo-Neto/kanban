@@ -26,6 +26,7 @@ class PostgresStrategy extends ICrud {
         quoteIdentifiers: false,
         // deprecation warning
         operatorsAliases: false,
+        logging: false,
 
         // dialectOptions: {
         //   ssl: true,

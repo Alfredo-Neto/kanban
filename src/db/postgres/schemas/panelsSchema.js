@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
 const panelsSchema = {
-  name: "kanban",
+  name: "panels",
   schema: {
     id: {
       type: Sequelize.INTEGER,
